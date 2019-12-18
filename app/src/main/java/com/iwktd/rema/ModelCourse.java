@@ -87,7 +87,7 @@ public class ModelCourse extends SQLiteOpenHelper {
         );
         if (cursor.moveToNext()){
             res.put(ModelCourse.uid, String.valueOf(cursor.getInt(0)));
-            res.put(ModelCourse.username, cursor.getString(1));
+            //res.put(ModelCourse.username, cursor.getString(1));
         }
         cursor.close();
         db.close();
